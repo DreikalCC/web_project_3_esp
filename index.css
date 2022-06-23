@@ -1,0 +1,97 @@
+.page {
+  background-color: #2A2C2F;
+  color: white;
+  font-family: "Inter";
+}
+
+.header {
+  position: relative;
+  height: 70px;
+  width: 270px;
+  margin: 0;
+  padding: 34px 505px 0 ;
+}
+
+.header__logo {
+  display: flex;
+  margin: 0;
+  padding: 0px 119px 38px 119px;
+}
+
+.logo__blue-square {
+  position: relative;
+  margin: 0;
+  background-color: #0278FE;
+  height: 32px;
+  width: 32px;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.logo__black-line-hor {
+  position: absolute;
+  background-color: #2A2C2F;
+  width: 32px;
+  height: 2px;
+  margin-top: 6px;
+  z-index: 1;
+}
+
+.logo__black-line-ver {
+  position: absolute;
+  background-color: #2A2C2F;
+  width: 2px;
+  height: 26px;
+  margin: 6px 19px 0 11px;
+  z-index: 1;
+}
+
+.header__title {
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  font-weight: 800;
+  align-self: center;
+}
+
+.lead {
+  margin: 0;
+  width: 984px;
+  height: 983px;
+  padding: 91px 148px 0;
+}
+
+.lead__title {
+  width: 794px;
+  height: 200px;
+  padding: 0 95px;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 100px;
+  text-align: center;
+}
+
+.lead__subtitle {
+  width: 720px;
+  height: 72px;
+  padding: 32px 132px 0;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+
+.lead__image {
+  width: 984px;
+  height: 615px;
+  padding-top: 64px;
+  /*background: #000000;*/
+  /*mix-blend-mode: hue;*/
+  filter: grayscale(100%);
+}
+
+.intro {
+  width: 1017px;
+  height: 516px;
+  
+}
