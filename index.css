@@ -1,19 +1,22 @@
 p {
-  margin-top: 0;
+  margin: 0;
+  padding-bottom: 25px;
 }
 
 .page {
+  margin: 0;
   background-color: #2A2C2F;
   color: white;
   font-family: "Inter";
+  box-sizing: border-box;
 }
 
 .header {
   position: relative;
-  height: 70px;
-  width: 270px;
-  margin: 0;
-  padding: 34px 505px 0 ;
+  max-height: 70px;
+  max-width: 270px;
+  /*margin: 0;*/
+  padding: 34px 0 0 505px;
 }
 
 .header__logo {
@@ -59,15 +62,15 @@ p {
 }
 
 .lead {
-  margin: 0;
-  width: 984px;
-  height: 983px;
-  padding: 91px 148px 0;
+  /*margin: 0;*/
+  max-width: 984px;
+  /*height: 983px;*/
+  padding: 91px 0 0 148px;
 }
 
 .lead__title {
-  width: 794px;
-  height: 200px;
+  max-width: 794px;
+  /*height: 200px;*/
   padding: 0 95px;
   font-size: 96px;
   font-weight: 900;
@@ -76,8 +79,8 @@ p {
 }
 
 .lead__subtitle {
-  width: 720px;
-  height: 72px;
+  max-width: 720px;
+  /*height: 72px;*/
   padding: 32px 132px 0;
   font-size: 30px;
   font-weight: 400;
@@ -86,18 +89,15 @@ p {
 }
 
 .lead__image {
-  width: 984px;
-  height: 615px;
+  width: 100%;
+  max-width: 984px;
   padding-top: 64px;
-  /*background: #000000;*/
-  /*mix-blend-mode: hue;*/
   filter: grayscale(100%);
 }
 
 .intro {
-  margin: 0;
-  width: 1017px;
-  height: 516px;
+  max-width: 1017px;
+  /*height: 516px;*/
   padding: 92px 0 0 148px;
 }
 
@@ -109,8 +109,8 @@ p {
 
 .intro__quote {
   margin: 0;
-  width: 722px;
-  height: 136px;
+  max-width: 722px;
+  /*height: 136px;*/
   font-size: 24px;
   line-height: 34px;
   font-weight: 400;
@@ -118,8 +118,8 @@ p {
 }
 
 .intro__quote-auth {
-  width: 720px;
-  height: 34px;
+  max-width: 720px;
+  /*height: 34px;*/
   margin-top: -24px;
   font-size: 24px;
   text-align: end;
@@ -127,36 +127,39 @@ p {
 
 .intro__text {
   padding-top: 32px;
-  width: 720px;
-  height: 182px;
+  max-width: 720px;
+  /*height: 182px;*/
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
 }
 
 .photo-grid {
-  margin: 0;
-  padding: 92px 18px 0 18px;
+  /*margin: 0;*/
+  padding-top: 92px;
+  padding-left: 48px;
   display: grid;
-  grid-template-columns: repeat(4, 284px);
+  grid-template-columns: repeat(4, 1fr /*284px*/);
   gap: 16px;
+  max-width: 1200px;
 }
 
 .photo-grid__item {
-  width: 284px;
-  height: 213px;
+  width: 100%;
+  max-width: 284px;
+  /*height: 213px;*/
 }
 
 .places {
   margin: 0;
   padding: 92px 0 0 145px;
-  width: 987px;
+  max-width: 987px;
 }
 
 .place {
   display: grid;
-  width: 984px;
-  grid-template-columns: 460px 484px;
+  max-width: 984px;
+  grid-template-columns: 1fr 1.05fr /*460px 484px*/;
   column-gap: 40px;
   row-gap: 48px;
   padding-bottom: 35px;
@@ -166,11 +169,12 @@ p {
   display: flex;
   justify-content: end;
   flex-direction: column;
+  width: auto;
 }
 
 .place__title {
-  width: 460px;
-  height: 152px;
+  max-width: 460px;
+  /*height: 152px;*/
   font-size: 72px;
   font-weight: 900;
   line-height: 76px;
@@ -178,8 +182,9 @@ p {
 
 
 .place__image {
-  height: 460px;
-  width: 460px;
+  width: 100%;
+  /*height: 460px;*/
+  max-width: 460px;
   padding-bottom: 48px;
 }
 
@@ -187,6 +192,7 @@ p {
   font-size: 18px;
   line-height: 29px;
   font-weight: 400;
+  max-width: 484px;
 }
 
 .frame {
@@ -213,16 +219,45 @@ p {
 }
 
 .cover {
-  display:flex;
+  box-sizing: border-box;
+  padding-left: 48px;
+  padding-top: 32px;
+  padding-bottom: 92px;
+  max-width: 1184px;
+  max-height: 740px;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 0;
+
+}
+
+.cover__background {
+  width: 100%;
+  
+}
+
+.cover__overlay {
+  max-height: 740px;
+  max-width: 1184px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  background: #2A2C2F;
+  opacity: .3;
+  z-index: 1;
+}
+
+.cover:hover {
+  opacity: .8;
 }
 
 .group {
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   text-align: center;
   align-items: center;
@@ -240,27 +275,11 @@ p {
   padding: 32px 0;
 }
 
-.cover__overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: #2A2C2F;
-  opacity: .3;
-}
-
-.cover:hover {
-  opacity: .8;
-}
-
-.cover__background {
-  z-index: 0;
-}
-
 .footer {
   display: flex;
-  margin: 0;
-  padding: 92px 0 24px;
   justify-content: center;
+  padding-bottom: 24px /*531px*/;
+  max-width: 1280px;
 }
 
 .footer__copyright {
