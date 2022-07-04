@@ -480,5 +480,19 @@
 }
 
 @media screen and (max-width: 368px) {
-  
+  /*.places {
+    max-width: 100%;
+  }
+  .place {
+    margin: 0 auto;
+  }
+  .place__title {
+    max-width: 93%;
+  }
+  .place__website {
+    max-width: 93%;
+  }
+  .place__paragraph {
+    max-width: 93%;
+  }*/
 }
