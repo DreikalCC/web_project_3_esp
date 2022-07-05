@@ -1,0 +1,13 @@
+.lead__image {
+  width: 100%;
+  max-width: 984px;
+  padding-top: 64px;
+  filter: grayscale(100%);
+}
+
+@media screen and (max-width: 368px) {
+  .lead__image {
+    padding-top: 40px;
+    width: 100vw;
+    }
+}

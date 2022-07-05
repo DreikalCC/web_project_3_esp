@@ -1,0 +1,20 @@
+.intro__quote-auth {
+    max-width: 720px;
+    /*height: 34px;*/
+    margin-top: -24px;
+    font-size: 1.5rem;
+    text-align: end;
+}
+
+@media screen and (max-width: 768px) {
+    .intro__quote-auth {
+      margin-top: -8px;
+      font-size: 1.5rem;
+      text-align: end;
+    }
+  }
+@media screen and (max-width: 544px) {
+    .intro__quote-auth {
+      font-size: 1.5rem;
+    }
+}

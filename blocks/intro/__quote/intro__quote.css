@@ -1,0 +1,27 @@
+.intro__quote {
+    margin: 0;
+    max-width: 722px;
+    /*height: 136px;*/
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .intro__quote {
+      padding-top: 15px;
+    }
+}
+  
+@media screen and (max-width: 544px) {
+    .intro__quote {
+      font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .intro__quote {
+      padding-top: 9px;
+    }
+}

@@ -177,7 +177,6 @@
   /*grid-area: title;*/
 }
 
-
 .place__image {
   width: 100%;
   /*height: 460px;*/
@@ -438,9 +437,9 @@
 }
 
 @media screen and (max-width: 544px) {
-  .header {
+  /*.header {
     margin: 0 auto;
-  }
+  }*/
   /*.lead__image {
     width: 100vw;
   }*/
@@ -475,32 +474,66 @@
   .frame__paragraph_visit {
     font-size: 1.12rem;
   }
+  .footer {
+    padding-top: 64px;
+  }
 }
 
 @media screen and (max-width: 368px) {
+  .lead__title {
+    padding: 0 16px;
+  }
+  .lead__subtitle {
+    width: 288px;
+    padding: 60px 16px 0;
+  }
   .lead__image {
+    padding-top: 40px;
     width: 100vw;
+  }
+  .intro__quote {
+    padding-top: 9px;
+  }
+  .intro__text {
+    padding-top: 0;
+  }
+  .photo-grid {
+    padding-top: 38px;
   }
   .places {
     max-width: 100vw;
   }
   .place :not(.place__graph) {
     max-width: 93%;
-    margin: 0 auto;
+    margin: 0;
   }
   .place__title {
-    max-width: 93%;
-    margin: 0 auto;
+    width: 93% /*288px*/;
+    /*margin: 0 auto;*/
+    padding-left: 16px;
   }
   .place__website {
-    max-width: 93%;
-    margin: 0 auto;
+    max-width: 100%;
+    /*margin: 0 auto;*/
+    padding-left: 16px;
+  }
+  .place__url-heading {
+    width: 288px;
   }
   .place__image {
+    padding-bottom: 0;
     width: 100vw;
   }
   .place__paragraph {
-    max-width: 93%;
-    margin: 0 auto;
+    width: 100%;
+    padding-left: 16px;
+    /*margin: 0 auto;*/
+    row-gap: 10px;
+  }
+  .frame_long {
+    left: 16px;
+  }
+  .cover {
+    padding-top: 46px;
   }
 }
