@@ -1,0 +1,23 @@
+.cover {
+    box-sizing: border-box;
+    padding-top: calc(92px - 25px);
+    max-width: 1184px;
+    max-height: 740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+.cover:hover {
+  opacity: .8;
+}
+
+  @media screen and (max-width: 368px) {
+    .cover {
+      padding-top: 46px;
+    }
+  }

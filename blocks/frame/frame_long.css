@@ -1,0 +1,17 @@
+.frame_long {
+    min-width: 355px;
+}
+
+@media screen and (max-width: 600px) {
+    .frame_long {
+      position: absolute;
+      bottom: 16px;
+      /*max-width: max-content;*/
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .frame_long {
+      left: 16px;
+    }
+}

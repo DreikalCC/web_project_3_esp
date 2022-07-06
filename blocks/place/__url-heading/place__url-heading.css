@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+    .place__url-heading {
+      font-size: .75rem;
+    }
+  }
+
+@media screen and (max-width: 368px) {
+    .place__url-heading {
+      width: 288px;
+    }
+  }

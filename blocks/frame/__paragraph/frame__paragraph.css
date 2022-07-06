@@ -1,0 +1,13 @@
+.frame__paragraph {
+    /*color: white;*/
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 600;
+    padding: 13px 20px;    
+}
+
+@media screen and (max-width: 600px) {
+    .frame__paragraph {
+      font-size: .87rem;
+    }
+}

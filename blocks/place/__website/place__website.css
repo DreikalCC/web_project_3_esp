@@ -1,0 +1,22 @@
+.place__website {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: auto;
+    /*grid-area: website;*/
+  }
+ 
+  @media screen and (max-width: 600px) {
+    .place__website {
+      padding-top: 30px;
+      grid-area: website;
+    }
+  }
+
+  @media screen and (max-width: 368px) {
+    .place__website {
+      max-width: 100%;
+      /*margin: 0 auto;*/
+      padding-left: 16px;
+    }
+  }

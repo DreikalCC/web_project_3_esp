@@ -1,0 +1,12 @@
+.group__title {
+    margin: 0;
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1.05;
+}
+
+@media screen and (max-width: 544px) {
+    .group__title {
+      font-size: 2rem;
+    }
+}

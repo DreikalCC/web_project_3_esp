@@ -1,0 +1,14 @@
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
+    max-height: max-content;
+    background-color: #0278FE;
+    border-radius: 4px;
+}
+
+.frame:hover {
+    background-color: #0063D2;
+    cursor: pointer;
+}

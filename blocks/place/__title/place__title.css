@@ -1,0 +1,41 @@
+.place__title {
+    max-width: 460px;
+    /*height: 152px;*/
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1.05;
+    /*grid-area: title;*/
+  }
+
+@media screen and (max-width: 1024px) {
+    .place__title {
+      font-size: 3.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .place__title {
+      font-size: 2.6rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .place__title {
+      font-size: 2rem;
+      grid-area: title;
+    }
+  }
+  
+  @media screen and (max-width: 544px) {
+    .group__title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 368px) {
+    .place__title {
+      width: 93% /*288px*/;
+      /*margin: 0 auto;*/
+      padding-left: 16px;
+    }
+  }
